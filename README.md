@@ -1,4 +1,5 @@
 # QD-IMD: Quick Draw Irregular Mask Dataset
+![Masked CelebA](https://raw.githubusercontent.com/karfly/qd-imd/master/readme/celeba_masked_6_examples.png)
 
 [Inpainting](https://en.wikipedia.org/wiki/Inpainting) is an important computer vision task, where goal is to restore masked parts of an image. E.g., inpainting can help in erasing from photo something unwanted like passing bystander or your ex-partner.
 
@@ -7,7 +8,13 @@ Many recent approaches focus on rectangular shaped holes, often assumed to be ce
 Guilin Liu *et al.* in their [recent paper](https://arxiv.org/abs/1804.07723) proposed such dataset, where source of irregular patterns were the results of occlusion/dis-occlusion mask estimation method between two consecutive frames for videos. Paper showed good results in inpainting, but we think their dataset has some weaknesses:
 - There is nothing "human" in generating such masks
 - Masks often have sharp edges because of rough crops close to borders
-- It's not public (though authors claimed, they were going to make it release it)
+- It's not public (though authors claimed, they were going to release it)
+
+##### NVidia Irregular Mask Dataset [[1]](https://arxiv.org/abs/1804.07723):
+![NVidia Irregular Mask Dataset examples](https://raw.githubusercontent.com/karfly/qd-imd/master/readme/nvidia_imd_6_examples.png)
+
+##### Our Irregular Mask Dataset (QD-IMD):
+![Quick Draw Irregular Mask Dataset examples](https://raw.githubusercontent.com/karfly/qd-imd/master/readme/qd_imd_6_examples.png)
 
 We decided to fight these problems and generated **QD-IMD** (Quick Draw Irregular Mask Dataset).
 
@@ -58,5 +65,9 @@ python generate_dataset.py --help
 
 ## Future work
 - Create vector version of the dataset
+
+## References
+- [1] [Image Inpainting for Irregular Holes Using Partial Convolutions](https://arxiv.org/abs/1804.07723)
+- [2] [CelebA dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
 
 
